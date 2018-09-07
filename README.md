@@ -25,6 +25,7 @@ Similar to how [Forms: 3rdparty Dynamic Fields](https://wordpress.org/plugins/fo
 	* `session_desiredkey` where 'session_' is a prefix indicating you want a Session value and 'desiredkey' is the index of which Session value to retrieve
 	* `cookie_desiredkey` where 'cookie_' is a prefix indicating you want a Cookie value and 'desiredkey' is the index of which Cookie value to retrieve
 	* `page_url` gets the current WP page url
+	* `page_url_nodomain` gets the current WP page url without the site domain (i.e. relative path)
 	* `page_referer` attempts to get the current referring url
 	* `page_request` gets the server-generated page url (which may/not be the same as `page_url`)
 	* `page_ip` attempts to get the client's ip address
@@ -49,6 +50,10 @@ Drop an issue at https://github.com/zaus/gf-dynamic-fields or in the Support for
 N/A.
 
 ## Changelog ##
+
+### 0.2 ###
+
+- added URL without domain
 
 ### 0.1 ###
 

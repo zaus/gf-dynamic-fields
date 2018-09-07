@@ -5,13 +5,16 @@ Plugin Name: Gravity Forms Dynamic Fields
 Plugin URI: https://github.com/zaus/gf-dynamic-fields
 Description: Dynamically fill fields with session, cookie, or other values, based on 'Forms: 3rdparty Dynamic Fields'
 Author: zaus
-Version: 0.1
+Version: 0.2
 Author URI: http://drzaus.com
 Changelog:
 	0.1	initial
+	0.2 url without domain
 */
 
 class GravityFormsDynamicFields {
+
+	const VERSION = '0.2';
 
 	// TODO: via setting
 	const SESSION_PREFIX = 'session';
@@ -19,6 +22,7 @@ class GravityFormsDynamicFields {
 	const PAGE_PREFIX = 'page';
 
 	const PAGE_URL = 'url';
+	const PAGE_URL_NODOMAIN = 'url_nodomain';
 	const PAGE_REFERER = 'referer';
 	const PAGE_REQUESTURL = 'request';
 	const PAGE_IP = 'ip';
@@ -51,6 +55,7 @@ class GravityFormsDynamicFields {
 
 			switch($key) {
 				case self::PAGE_URL: return get_permalink();
+				case self::PAGE_URL_NODOMAIN: return str_replace(get_site_url(), '', get_permalink());
 				case self::PAGE_REFERER: return wp_get_referer();
 				case self::PAGE_REQUESTURL:
 					return sprintf('http%s://', is_ssl() ? 's' : '') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
