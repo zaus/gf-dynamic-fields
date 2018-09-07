@@ -22,12 +22,12 @@ Similar to how [Forms: 3rdparty Dynamic Fields](https://wordpress.org/plugins/fo
 3. Activate plugin
 4. Create or edit a Gravity Form -- under the 'Advanced' tab of a field, check "allow this field to be populated dynamically".
 5. Set the ensuing 'Parameter Name' field to one of the registered placeholders:
-	a. `session_desiredkey` where 'session_' is a prefix indicating you want a Session value and 'desiredkey' is the index of which Session value to retrieve
-	b. `cookie_desiredkey` where 'cookie_' is a prefix indicating you want a Cookie value and 'desiredkey' is the index of which Cookie value to retrieve
-	c. `page_url` gets the current WP page url
-	d. `page_referer` attempts to get the current referring url
-	e. `page_request` gets the server-generated page url (which may/not be the same as `page_url`)
-	f. `page_ip` attempts to get the client's ip address
+	* `session_desiredkey` where 'session_' is a prefix indicating you want a Session value and 'desiredkey' is the index of which Session value to retrieve
+	* `cookie_desiredkey` where 'cookie_' is a prefix indicating you want a Cookie value and 'desiredkey' is the index of which Cookie value to retrieve
+	* `page_url` gets the current WP page url
+	* `page_referer` attempts to get the current referring url
+	* `page_request` gets the server-generated page url (which may/not be the same as `page_url`)
+	* `page_ip` attempts to get the client's ip address
 
 
 ## Frequently Asked Questions ##
