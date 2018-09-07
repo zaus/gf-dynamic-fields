@@ -1,4 +1,4 @@
-=== Gravity Forms Dynamic Fields ===
+# Gravity Forms Dynamic Fields #
 Contributors: zaus
 Donate link: http://drzaus.com/donate
 Tags: contact form, form, Gravity Forms, gravityforms, session, cookies
@@ -9,13 +9,13 @@ License: GPLv2 or later
 
 Dynamically fill fields with session, cookie, or other values, based on 'Forms: 3rdparty Dynamic Fields'.
 
-== Description ==
+## Description ##
 
 Insert cookie, session, page, or other kinds of values dynamically into Gravity Forms fields.
 
 Similar to how [Forms: 3rdparty Dynamic Fields](https://wordpress.org/plugins/forms-3rdparty-dynamic-fields/) can insert dynamic values into the 3rdparty submission.
 
-== Installation ==
+## Installation ##
 
 1. Unzip, upload plugin folder to your plugins directory (`/wp-content/plugins/`)
 2. Make sure Gravity Forms is installed
@@ -30,30 +30,30 @@ Similar to how [Forms: 3rdparty Dynamic Fields](https://wordpress.org/plugins/fo
 	f. `page_ip` attempts to get the client's ip address
 
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
-= How do I get a session value? =
+### How do I get a session value? ###
 
 See the installation instructions and use `session_yourdesiredkey` as the Parameter Name, where `yourdesiredkey` is the Session index you want.
 
-= How do I get a cookie value? =
+### How do I get a cookie value? ###
 
 See the installation instructions and use `cookie_yourdesiredkey` as the Parameter Name, where `yourdesiredkey` is the Cookie index you want.
 
-= It doesn't work right... =
+### It doesn't work right... ###
 
 Drop an issue at https://github.com/zaus/gf-dynamic-fields or in the Support forum.
 
-== Screenshots ==
+## Screenshots ##
 
 N/A.
 
-== Changelog ==
+## Changelog ##
 
-= 0.1 =
+### 0.1 ###
 
-IT HAS BEGUN.  Supports session, cookie, and a couple page values
+IT HAS BEGUN.  Supports session, cookie, and a couple page values.
 
-== Upgrade Notice ==
+## Upgrade Notice ##
 
 N/A.
