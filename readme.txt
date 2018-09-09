@@ -3,7 +3,7 @@ Contributors: zaus
 Donate link: http://drzaus.com/donate
 Tags: contact form, form, Gravity Forms, gravityforms, session, cookies
 Requires at least: 3.0
-Tested up to: 4.6.1
+Tested up to: 4.9.8
 Stable tag: trunk
 License: GPLv2 or later
 
